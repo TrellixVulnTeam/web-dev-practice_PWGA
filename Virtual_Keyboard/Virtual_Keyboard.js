@@ -1,3 +1,5 @@
+let clear_check = false;
+
 const keyboard = {
     elements: {
         main: null,
@@ -34,9 +36,18 @@ const keyboard = {
         document.querySelectorAll(".use-keyboard").forEach (element => {
             element.addEventListener("focus", () => {
                 this.open(element.value, current_value => {
+                    // console.log("element = ", element.value);
+                    // console.log("current = ", current_value);
+                    // if (clear_check){
+                    //     element.value = "";
+                    //     clear_check = false;  
+                    // }
+                    // else {
+                    //     element.value = current_value;
+                    // }
                     element.value = current_value;
                 });
-            })
+            });
         });
     },
 
@@ -159,9 +170,19 @@ const keyboard = {
 
 window.addEventListener ('DOMContentLoaded', function (){
     keyboard.init();
-    // keyboard.open("dcode", function (current_value){
+    clear();
+    // keyboard.open("test", function (current_value){
     //     console.log("Value change: ",current_value);
     // }, function (current_value){
     //     console.log("Keyboard closed! Finishing value: ", current_value);
     // });
 });
+
+document.getElementById("clear").addEventListener('click', e => {
+    clear();
+    clear_check = true;
+});
+
+function clear (){
+    document.querySelector(".use-keyboard").value = "";
+}

@@ -1,8 +1,40 @@
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom, orange 60%, cyan) no-repeat;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#instructions {
+    margin-left: 30%;
+}
+
 textarea {
     position: absolute;
-    margin: auto;
-    width: 300px;
+    top: 52%;
+    left: 50%;
+    width: 400px;
     height: 100px;
+    margin-top: -100px;
+    margin-left: -200px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+#clear {
+    background: palegreen;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    padding: 1px;
+    border: 1px solid white;
+    border-radius: 12%;
+    margin-left: 4%;
+    margin-top: 5%;
 }
 
 .keyboard {
