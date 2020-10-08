@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 250;
+    line-height: 1.3;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    align-items: center;
+    background-image: linear-gradient(250deg, #2ebb80, #8189ad);
+    display: inline;
+    /* height: 100vh; */
+    justify-content: center;
+}
+
+.container {
+    max-width: 15em;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-weight: inherit;
+    /* border: 1px solid black; */
+}
+
+input, button {
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: left;
+    outline: none;
+}
+
+input:hover, input:active, input:focus, button:hover, button:active, button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.calculator {
+    margin: auto;
+    max-width: 15em;
+    max-height: 20em;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.calculator-display {
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;;
+}
+
+.calculator-keys {
+    background-color: #999;
+    border: 8px solid #7f7f7f;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.calculator-keys > *{
+    background-color: palegoldenrod;
+    padding: 0.5em 1.25em;
+    text-align: center;
+    position: relative;
+}
+
+.calculator-keys > *:active::before, 
+.calculator-keys > .is-depressed::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.add, .subtract, .multiply, .divide {
+    background-image: linear-gradient(to right, #f1d79d, #ffd858);
+}
+
+.equal-key {
+    background-image: linear-gradient(to bottom, #f07d60, #b85126);
+    grid-column: 4;
+    grid-row: 2 / span 4;
+}
