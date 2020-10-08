@@ -1,0 +1,68 @@
+#container {
+    width: 700px;
+    height: 450px;
+    margin: 70px auto;
+    border: 2px solid rgb(125, 181, 66);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(125, 181, 66);
+}
+
+#projects {
+    width: 650px;
+    height: 250px;
+    margin: auto;
+}
+
+ol li {
+    border: 1px dotted black;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+ol li:hover {
+    background: #6eb7d6;
+}
+
+#btn-add-project {
+    margin-left: 550px;
+    margin-bottom: 20px;
+    height: 32px;
+    background: rgb(133, 173, 247);
+    border: 2px solid rgb(161, 159, 159);
+    border-radius: 6%;
+    padding: 5px;
+    color: rgb(66, 65, 65);
+}
+
+#project-dialog {
+    display: none;
+}
+
+#btn-add-task {
+    margin-left: 550px;
+    margin-top: 20px;
+    width: 100px;
+    height: 32px;
+    background: rgb(133, 173, 247);
+    border: 2px solid rgb(161, 159, 159);
+    border-radius: 6%;
+    padding: 5px;
+    color: rgb(66, 65, 65);
+}
+
+#task-dialog {
+    display: none;
+}
+
+checkbox:hover {
+    cursor:pointer;
+}
+
+.ui-icon-close {
+    transform: scale(1.2);
+    cursor: pointer;
+}

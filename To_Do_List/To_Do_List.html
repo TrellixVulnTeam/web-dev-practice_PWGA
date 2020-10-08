@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        <link rel = "stylesheet" type = "text/css" href = "../jQuery/jquery-ui-1.12.1/jquery-ui.css">
+        <link rel = "stylesheet" type = "text/css" href = "../Styles/To_Do_List.css">
+        <title>To Do List</title>
+        <script src = "../jQuery/jquery-3.5.1.js"></script>
+        <script src = "../jQuery/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src = "../jQuery/To_Do_List.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h2>To Do List</h2>
+            <button type="submit" id="btn-add-project">Add Project</button>
+            <div id="projects">
+                <ul id="main">
+                    <li> <a href="#personal">Personal</a><span class="ui-icon ui-icon-close"></span></li>
+                    <li> <a href="#work">Work</a><span class="ui-icon ui-icon-close"></span></li>
+                </ul>
+                <ol id="personal">
+                    <li><input type="checkbox">Personal 1</li>
+                    <li><input type="checkbox">Personal 2</li>
+                    <li><input type="checkbox">Personal 3</li>
+                </ol>
+                <ol id="work">
+                    <li><input type="checkbox">Work 1</li>
+                    <li><input type="checkbox">Work 2</li>
+                    <li><input type="checkbox">Work 3</li>
+                </ol>
+            </div>
+            <button id="btn-add-task">Add Task</button>
+            <div id="project-dialog" title="Add a project">
+                <label for="new-project">Project name:</label><input id="new-project" type="text"/>
+            </div>
+            <div id="task-dialog" title="Add a task">
+                <label for="new-task">Task name:</label><input id="new-task" type="text"/>
+            </div>
+        </div>
+    </body>
+</html>
