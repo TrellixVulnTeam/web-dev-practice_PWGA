@@ -1,2 +1,3 @@
-Responsive_Website is a webpage developed using Bootstrap.
-Responsive_Website_2 is a webpage consistinng of various animations developed using Bootstrap and jQuery.
+Responsive_Website is a webpage developed using Bootstrap without any animations.
+
+Responsive_Website_2 is a webpage consisting of various animations developed using Bootstrap. Navigation bar, social icons and scrolling effect was implemented using jQuery.
