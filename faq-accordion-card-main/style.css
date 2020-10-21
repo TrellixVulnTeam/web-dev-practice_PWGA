@@ -1,0 +1,71 @@
+html {
+    height: 170%;
+}
+
+body {
+    /* background-color: violet; */
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans',sans-serif;
+    font-size: 0.9rem !important;
+}
+
+.container {
+    margin: 10% 40%;
+    background-color: #fdf5f5;
+    height: 30% !important;
+    width: 75% !important;
+    border-radius: 18px;
+}
+
+#woman {
+    position: relative;
+    top: 6px;
+    left: -110px;
+    z-index: 1;
+    height: 31em;
+}
+
+#illustrationBox {
+    position: absolute;
+    top: 13em;
+    left: -95px;
+    z-index: 99;
+}
+
+#imageBg {
+    position: absolute;
+    top: -300px;
+    right: 30px;
+}
+
+#faqText {
+    padding-right: 90px;
+}
+
+.content {
+    margin-bottom: 1em;
+}
+
+.content li {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Kumbh Sans',sans-serif;
+    padding-left: 1.2em;
+}
+
+hr {
+    background-color: grey;
+    opacity: 0.30;
+}
+
+.questions {
+    color: black !important;
+}
+
+.questions:hover {
+    color: red !important;
+    cursor: pointer;
+}
