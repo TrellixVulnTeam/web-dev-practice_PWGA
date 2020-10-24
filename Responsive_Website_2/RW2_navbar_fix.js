@@ -5,11 +5,9 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(window).scrollTop() > header_height) {
             nav.addClass(fixed_top);
-            console.log("check");
         }
         else {
             nav.removeClass(fixed_top);
-            console.log("check2");
         }
     });
 

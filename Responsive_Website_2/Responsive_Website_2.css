@@ -251,7 +251,7 @@ sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
 }
 
 #cover-image {
-    background: url(../Images/pic-cover.jpg) fixed center no-repeat;
+    background: url(./Images/pic-cover.jpg) fixed center no-repeat;
     height: 900px;
     background-size: cover;
 }
@@ -380,7 +380,7 @@ sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
 }
 
 #text-over-image {
-    background: url('../Images/pic-over-image1.jpg') fixed center no-repeat;
+    background: url('./Images/pic-over-image1.jpg') fixed center no-repeat;
 }
 
 @media queries and (max-height: 992px) {
@@ -411,7 +411,7 @@ sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
 
 /* Testimonials carousel in content area */
 #testimonials-carousel {
-    background: url('../Images/pic-testimonial.jpg') center no-repeat;
+    background: url('./Images/pic-testimonial.jpg') center no-repeat;
 }
 
 /* News and Updates in content area */
