@@ -1,0 +1,86 @@
+html, body {
+    /* overflow: hidden; */
+    height:100%;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1%;
+    margin-bottom: none;
+}
+
+form {
+    width: 85%;
+    border: 1px solid rgb(46, 9, 94);
+    margin: 40px auto;
+    border-radius: 5px;
+    background-color: rgb(75, 22, 145);
+    opacity: 0.9;
+}
+
+form .wrapper {
+    margin: 30px;
+}
+
+form label, input {
+    display: block;
+    margin: 3px 0;
+    padding: 10px 0;
+}
+
+form input[type=checkbox], input[type=checkbox]+label, input[type=radio], input[type=radio]+label {
+    display: inline-block;
+    /* border: 1px solid black; */
+}
+
+form input[type=text] {
+    width: 95%;
+}
+
+form .button-wrapper {
+    margin: 10px auto;
+    width: 92%;
+}
+
+#comments {
+    width: 100%;
+    height: 110px;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 10px 0;
+    background-color: green;
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        width: 100%;
+        margin: none;
+    }
+    body {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 560px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 70%;
+    }
+}
