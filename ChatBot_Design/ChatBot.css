@@ -1,0 +1,241 @@
+html {
+    overflow: hidden;
+}
+
+.container {
+    border: 1px solid rgb(255, 110, 27); /* Ask about this */
+    margin-top: -5px;
+    height: 580px;
+    width: 450px;
+    position: absolute;
+    /* right: 10px; */
+    border-radius: 14px;
+    font-family: sans-serif;
+    background-color: #FFF;
+}
+
+.minimize-and-close {
+    display: flex;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: white;
+    z-index: 99;
+    right: 50px;
+    top: -14px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#minimize {
+    margin-right: 10px;
+    transition: transform 0.5s;
+}
+
+#minimize {
+    transition: transform 0.5s;
+}
+
+#minimize:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#close:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.top-row {
+    position: absolute;
+    width: 450px;
+    height: 45%;    
+    margin-top: 0px;
+    /* background-color: rgb(255, 110, 27); */
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background-color: rgb(255, 110, 27);
+    animation: fadein ease 3s;
+    display: none;
+}
+
+.top-row-text {
+    margin: -18px 0 30px 60px;
+    color: antiquewhite;
+    animation: fadein ease 2s;
+    /* animation-delay: 2s; */
+    display: none;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.wrapper-1 {
+    display: inline-flex;
+    margin-top: -30px;
+    height: 30px;
+    padding: 0;
+}
+
+h3{
+    margin-top: 5px;
+    padding: 0;
+    font-size: 20px;
+}
+
+img {
+    margin: -5px 0 0 15px;
+}
+
+.wrapper-1 p {
+    line-height: 1.4;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.robot-icon-wrapper {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(255, 110, 27);
+    border-radius: 50%;
+    margin-top: 165px;
+    box-shadow: 0 -5px 15px 0 rgb(209, 113, 24);
+    margin-left: 50px;
+    z-index: 99;
+    display: none;
+    animation: fadein ease 3s;
+}
+.robot-icon-wrapper .fas {
+    /* border: 1px solid black; */
+    position: absolute;
+    margin: 14.5px;
+    color: white;
+    font-size: 27px;
+    z-index: 99;
+}
+
+.front-box {
+    position: absolute;
+    z-index: 1;
+    height: 66.5%;
+    width: 90%;
+    margin-left: 21px;
+    box-shadow: 0 0px 15px -20px rgb(209, 113, 24);
+    margin-top: 185px;
+    border: 1px solid rgb(241, 211, 211);
+    border-radius: 14px;
+    background-color: #FFF;
+    display: none;
+    animation: fadein ease 3s;
+}
+
+.wrapper-2 {
+    /* display: flex; */
+    /* border: 1px solid black; */
+    margin: 40px 0 0 25px;
+    display: none;
+    animation: fadein ease 3s;
+}
+
+.wrapper-2 i {
+    color: antiquewhite;
+    /* border: 1px solid black; */
+    height: 17px;
+    width: 15px;
+    margin: 17px 0 0 13px;
+    background-color: rgb(209, 113, 24);
+    font-size: 17px;
+    border-radius: 14px;
+}
+
+.questions {
+    margin-left: 27px;
+    font-size: 12px;
+    text-shadow: 0.px 0.px rgb(218, 208, 208);
+    color: rgb(46, 43, 43);
+}
+
+#question1, #question2, #question3, #question4 {
+    border: 1px solid rgb(201, 197, 197);
+    border-radius: 8px;
+    width: 88%;
+    padding: 3px 3px 3px 10px;
+    /* display: flex; */
+    display: none;
+    animation: fadein ease 3s;
+    transition: transform 0.5s;
+}
+
+.questions p {
+    margin-left: 3px;
+}
+
+.circle {
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 110, 27);
+    border-radius: 50%;
+    box-shadow: 0 0px 2px 3px rgb(253, 215, 164);
+    margin: 14px 10px 0 0;
+}
+
+#question2, #question3, #question4 {
+    margin-top: 10px;
+}
+
+#question1:hover, #question2:hover, #question3:hover, #question4:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button {
+    font-size: 14px;
+    /* display: flex; */
+    border: 1px solid rgb(201, 197, 197);
+    margin: 22px 50px 20px 50px;
+    border-radius: 25px;
+    color: #3b3a3a;
+    height: 42px;
+    display: none;
+    animation: fadein ease 3s;
+    transition: transform 0.3s;
+}
+
+.button i {
+    margin: 15px 10px 0 50px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.bottom-row {
+    width: 450px;
+    height: 60%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: #FFFF;
+    bottom: 0;
+    position: absolute;
+}
+
+@keyframes fadein{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        top: 10px;
+        bottom: 10px;
+        left: 20px;
+    }
+}
