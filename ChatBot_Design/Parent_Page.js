@@ -11,7 +11,7 @@ document.getElementsByClassName("chat-icon-wrapper")[0].addEventListener("click"
     let i_frame = document.createElement("IFRAME");
     i_frame.setAttribute("id", "chatBoxIframe");
     i_frame.setAttribute("src", "./ChatBot.html");
-    i_frame.setAttribute("frameBorder", "1");
+    i_frame.setAttribute("frameBorder", "0");
     i_frame.classList.add("frame");
     document.body.appendChild(i_frame);
 

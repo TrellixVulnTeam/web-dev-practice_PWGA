@@ -1,1 +1,0 @@
-var is_chat_box_open = false;
