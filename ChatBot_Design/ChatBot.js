@@ -72,9 +72,9 @@ documentReady(chatBotAnimation);
 
 // Minimize and close
 function minimizeChatBot() {
-    document.getElementsByClassName("container")[0].classList.add("hide");
+    // document.getElementsByClassName("container")[0].classList.add("hide");
 }
 
 function closeChatBot() {
-    document.getElementsByClassName("container")[0].classList.add("hide");
+    // document.getElementsByClassName("container")[0].classList.add("hide");
 }

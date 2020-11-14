@@ -10,32 +10,33 @@ document.getElementsByClassName("chat-icon-wrapper")[0].addEventListener("click"
     // Adds iframe
     let i_frame = document.createElement("IFRAME");
     i_frame.setAttribute("id", "chatBoxIframe");
-    i_frame.setAttribute("src", "ChatBot.html");
-    i_frame.setAttribute("frameBorder", "0");
-    i_frame.classList.add("frame-appear");
+    i_frame.setAttribute("src", "./ChatBot.html");
+    i_frame.setAttribute("frameBorder", "1");
     i_frame.classList.add("frame");
     document.body.appendChild(i_frame);
 
     if (is_chat_box_open) {
         i_frame.onload = function() {
-            let doc = i_frame.contentDocument || i_frame.contentWindow.document;
+            let doc = i_frame.contentDocument || i_frame.contentWindow.document || i_frame.document;
             doc.getElementById("minimize").addEventListener("click", function() {
-                // Minimizes the frame
-                i_frame.classList.add("frame-hide");
 
-                // Removes the chatbot icon
-                document.getElementsByClassName("chat-icon-wrapper")[0].classList.remove("chat-icon-wrapper-hide");
+            // Minimizes the frame
+            i_frame.classList.add("frame-hide");
 
-                is_chat_box_open = false;
+            // Removes the chatbot icon
+            document.getElementsByClassName("chat-icon-wrapper")[0].classList.remove("chat-icon-wrapper-hide");
+
+            is_chat_box_open = false;
             });
             doc.getElementById("close").addEventListener("click", function() {
-                // Minimizes the frame
-                i_frame.classList.add("frame-hide");
 
-                // Removes the chatbot icon
-                document.getElementsByClassName("chat-icon-wrapper")[0].classList.remove("chat-icon-wrapper-hide");
+            // Minimizes the frame
+            i_frame.classList.add("frame-hide");
 
-                is_chat_box_open = false;
+            // Removes the chatbot icon
+            document.getElementsByClassName("chat-icon-wrapper")[0].classList.remove("chat-icon-wrapper-hide");
+
+            is_chat_box_open = false;
             });
         }
     }
