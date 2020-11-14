@@ -81,7 +81,6 @@ ol, p{
         overflow: scroll;
     }
     .frame {
-        left: 0px;
         right: 2%;
         width: 100%;
     }
