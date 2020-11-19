@@ -409,24 +409,24 @@ img {
     }
     .wrapper-2 {
         font-size: 1.2em;
-        margin: 25% 2% 6% 5%;
+        margin: 20% 2% 6% 5%;
     }
     .wrapper-2 i {
         margin-top: 6%;
     }
     .questions {
         font-size: 0.8em;
-        margin: 10% 3% 5% 5%;
+        margin: 15% 3% 5% 5%;
     }
     #question1, #question2, #question3, #question4 {
         width: 95%;
         height: 40%;
     }
     #question2, #question3 {
-        margin: 15% 0;
+        margin: 10% 0;
     }
     .button {
         width: 80%;
-        margin: 15% 5% 0 10%;
+        margin: 20% 5% 0 10%;
     }
 }
