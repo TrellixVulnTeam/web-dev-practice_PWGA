@@ -85,7 +85,6 @@ ol, p{
         width: 40%;
         height: 75%;
         right: 2vh;
-        border: 1px solid blue;
     }
 }
 
@@ -101,7 +100,6 @@ ol, p{
         width: 45%;
         height: 100%;
         right: 2vh;
-        border: 1px solid green;
         top: 0.5vh;
     }
 }
