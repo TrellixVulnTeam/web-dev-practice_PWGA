@@ -262,7 +262,7 @@ body {
 
 .story__content {
   background-color: #f9f7f6;
-  grid-column: col-end 4 / full-end;
+  grid-column: col-end 5 / full-end;
   padding: 6rem 8vh;
   display: flex;
   flex-direction: column;
