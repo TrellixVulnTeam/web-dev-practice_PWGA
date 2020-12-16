@@ -1,0 +1,18 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "advanced css and sass project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --watch sass/style.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NatsuDrag9"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
